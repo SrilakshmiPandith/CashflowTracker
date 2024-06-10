@@ -1,0 +1,11 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+input:valid ~ .input-text{
+    @apply block text-blue-500 bg-white transform -translate-y-6 -translate-x-4 scale-90;
+}
+
+select ~ .input-text{
+    @apply block text-blue-500 bg-white transform -translate-y-6 -translate-x-4 scale-90;
+}
