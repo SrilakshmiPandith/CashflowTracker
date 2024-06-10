@@ -33,7 +33,7 @@ export default function Input() {
     cssClasses += " text-green-700";
   }
   let classes =
-    "px-2 text-xl text-blue-500 border-2 rounded-lg border-blue border-opacity-50 outline-none focus:border-blue-500 focus:text-blue-500 transition duration-200";
+    "px-2 md:text-xl text-m text-blue-500 border-2 rounded-lg border-blue border-opacity-50 outline-none focus:border-blue-500 focus:text-blue-500 transition duration-200";
   let numberClasses =
     cssClasses +
     " [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none";
@@ -53,7 +53,7 @@ export default function Input() {
     );
   } else if (type === "CashIn" || type === "CashOut") {
     content = (
-      <form className="px-3 py-5 m-auto w-2/3 border-2 grid-rows-1 block ">
+      <form className="px-3 py-5 m-auto md:w-2/3 border-2 grid-rows-1 block ">
         <div className="flex gap-10 justify-center">
           <input type="date" ref={date} className={classes} />
           <input type="time" ref={time} className={classes} />
