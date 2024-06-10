@@ -45,7 +45,7 @@ export default function Header(){
         }
    
     return(
-        <div className="bg-sky-400 h-[250px] text-center" >
+        <div className="bg-sky-400 h-[150px] text-center" >
             <div className="flex text-center">
             <h1 className="text-4xl  m-auto font-bold text-slate-50 text-center inline">CashFlow Tracker</h1>
             <CSVLink data={entries} headers={headers} filename="CashFlow_Data" className="p-9 text-4xl" ><RiFileExcel2Line /></CSVLink>
