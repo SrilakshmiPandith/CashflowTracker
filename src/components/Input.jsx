@@ -22,18 +22,18 @@ export default function Input() {
     setType("CashOut");
   }
 
-  let optionsClasses = "text-xl text-blue-500";
+  let optionsClasses = "md:text-xl text-xs text-blue-500";
   let spanClasses =
-    "md:text-2xl text-m text-blue-500 text-opacity-80 absolute left-0 top-3 mx-6 px-3 transition duration-200 input-text";
+    "md:text-2xl text-s text-blue-500 text-opacity-80 absolute left-0 top-3 mx-6 px-3 transition duration-200 input-text";
   let cssClasses =
-    "h-15  m-3 px-2 py-2 block md:text-2xl text-m bg-white border-2 rounded-lg border-blue border-opacity-50 outline-none focus:border-blue-500 transition duration-200";
+    "m-3 px-2 py-2 block md:text-2xl text-xs bg-white md:border-2 rounded-lg border-blue border-opacity-50 outline-none focus:border-blue-500 transition duration-200";
   if (type === "CashOut") {
     cssClasses += " text-red-700";
   } else {
     cssClasses += " text-green-700";
   }
   let classes =
-    "px-2 md:text-xl text-m text-blue-500 border-2 rounded-lg border-blue border-opacity-50 outline-none focus:border-blue-500 focus:text-blue-500 transition duration-200";
+    "px-2 md:text-xl text-xs text-blue-500 border-2 rounded-lg border-blue border-opacity-50 outline-none focus:border-blue-500 focus:text-blue-500 transition duration-200";
   let numberClasses =
     cssClasses +
     " [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none";
