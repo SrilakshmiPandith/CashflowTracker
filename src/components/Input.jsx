@@ -24,9 +24,9 @@ export default function Input() {
 
   let optionsClasses = "text-xl text-blue-500";
   let spanClasses =
-    "text-2xl text-blue-500 text-opacity-80 absolute left-0 top-3 mx-6 px-3 transition duration-200 input-text";
+    "md:text-2xl text-m text-blue-500 text-opacity-80 absolute left-0 top-3 mx-6 px-3 transition duration-200 input-text";
   let cssClasses =
-    "h-15  m-3 px-2 py-2 block text-2xl bg-white border-2 rounded-lg border-blue border-opacity-50 outline-none focus:border-blue-500 transition duration-200";
+    "h-15  m-3 px-2 py-2 block md:text-2xl text-m bg-white border-2 rounded-lg border-blue border-opacity-50 outline-none focus:border-blue-500 transition duration-200";
   if (type === "CashOut") {
     cssClasses += " text-red-700";
   } else {
